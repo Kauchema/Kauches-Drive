@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kauches Drive - Premium car rental services in Ghana. Book quality vehicles for your journey.">
+    <title>Kauches Drive - Premium Car Rentals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ===== HEADER SECTION ===== -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <img src="logo.jpeg" alt="Kauches Drive Logo" class="logo-img">
+                        <span class="logo-text">Kauches Drive</span>
+                    </div>
+                    
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#fleet" class="nav-link">Our Fleet</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#booking" class="btn-primary">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Your Journey Starts Here</h1>
+                    <p class="hero-subtitle">
+                        Experience premium car rentals with Kauches Drive. Quality vehicles, 
+                        exceptional service, unforgettable journeys across Ghana.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#fleet" class="btn-primary btn-large">Explore Our Fleet</a>
+                        <a href="#contact" class="btn-secondary btn-large">Get in Touch</a>
+                    </div>
+                </div>
+                
+                <div class="booking-card" id="booking">
+                    <h3 class="booking-title">Quick Booking</h3>
+                    <form class="booking-form" id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pickupLocation">Pick-up Location</label>
+                                <input type="text" id="pickupLocation" placeholder="Enter location" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dropoffLocation">Drop-off Location</label>
+                                <input type="text" id="dropoffLocation" placeholder="Enter location" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pickupDate">Pick-up Date</label>
+                                <input type="date" id="pickupDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dropoffDate">Drop-off Date</label>
+                                <input type="date" id="dropoffDate" required>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-block">Search Available Cars</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES SECTION ===== -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚗</div>
+                    <h3>Quality Vehicles</h3>
+                    <p>Well-maintained, modern cars for your comfort and safety</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Affordable Rates</h3>
+                    <p>Competitive pricing with no hidden fees or charges</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer service for your peace of mind</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Flexible Pick-up</h3>
+                    <p>Multiple locations across Ghana for your convenience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FLEET SECTION ===== -->
+    <section class="fleet" id="fleet">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Premium Fleet</h2>
+                <p class="section-subtitle">Choose from our wide range of quality vehicles</p>
+            </div>
+
+            <div class="fleet-grid">
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="image1.jpeg" alt="Toyota Noah">
+                        <div class="car-badge">Popular</div>
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-name">Toyota Noah</h3>
+                        <p class="car-description">Spacious 8-seater perfect for family trips</p>
+                        <div class="car-features">
+                            <span class="car-feature">8 Seats</span>
+                            <span class="car-feature">Auto</span>
+                            <span class="car-feature">AC</span>
+                        </div>
+                        <div class="car-footer">
+                            <div class="car-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">GH₵ 350/day</span>
+                            </div>
+                            <button class="btn-primary btn-small">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="image2.jpeg" alt="Toyota Vitz">
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-name">Toyota Vitz</h3>
+                        <p class="car-description">Compact and fuel-efficient city car</p>
+                        <div class="car-features">
+                            <span class="car-feature">5 Seats</span>
+                            <span class="car-feature">Auto</span>
+                            <span class="car-feature">AC</span>
+                        </div>
+                        <div class="car-footer">
+                            <div class="car-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">GH₵ 200/day</span>
+                            </div>
+                            <button class="btn-primary btn-small">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="image3.jpeg" alt="Toyota Vitz Silver">
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-name">Toyota Vitz (Silver)</h3>
+                        <p class="car-description">Reliable hybrid for long journeys</p>
+                        <div class="car-features">
+                            <span class="car-feature">5 Seats</span>
+                            <span class="car-feature">Hybrid</span>
+                            <span class="car-feature">AC</span>
+                        </div>
+                        <div class="car-footer">
+                            <div class="car-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">GH₵ 220/day</span>
+                            </div>
+                            <button class="btn-primary btn-small">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="image4.jpeg" alt="Toyota Hiace">
+                        <div class="car-badge">Best for Groups</div>
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-name">Toyota Hiace</h3>
+                        <p class="car-description">Spacious van for large groups and events</p>
+                        <div class="car-features">
+                            <span class="car-feature">14 Seats</span>
+                            <span class="car-feature">Manual</span>
+                            <span class="car-feature">AC</span>
+                        </div>
+                        <div class="car-footer">
+                            <div class="car-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">GH₵ 450/day</span>
+                            </div>
+                            <button class="btn-primary btn-small">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="image5.jpeg" alt="Toyota Voxy">
+                        <div class="car-badge">Premium</div>
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-name">Toyota Voxy</h3>
+                        <p class="car-description">Luxury minivan with premium features</p>
+                        <div class="car-features">
+                            <span class="car-feature">8 Seats</span>
+                            <span class="car-feature">Auto</span>
+                            <span class="car-feature">AC</span>
+                        </div>
+                        <div class="car-footer">
+                            <div class="car-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">GH₵ 400/day</span>
+                            </div>
+                            <button class="btn-primary btn-small">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="image6.jpeg" alt="Toyota Hiace Commuter">
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-name">Toyota Hiace Commuter</h3>
+                        <p class="car-description">Comfortable transport for any occasion</p>
+                        <div class="car-features">
+                            <span class="car-feature">15 Seats</span>
+                            <span class="car-feature">Manual</span>
+                            <span class="car-feature">AC</span>
+                        </div>
+                        <div class="car-footer">
+                            <div class="car-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">GH₵ 480/day</span>
+                            </div>
+                            <button class="btn-primary btn-small">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive solutions for all your transportation needs</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎉</div>
+                    <h3>Event Transportation</h3>
+                    <p>Perfect transportation solutions for weddings, conferences, and special events with professional drivers.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">✈️</div>
+                    <h3>Airport Transfers</h3>
+                    <p>Reliable pick-up and drop-off services to and from Kotoka International Airport and other locations.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Corporate Rentals</h3>
+                    <p>Flexible long-term rental packages for businesses with dedicated account management.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🗺️</div>
+                    <h3>Chauffeur Service</h3>
+                    <p>Professional drivers available for hire to ensure comfortable and stress-free journeys.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌍</div>
+                    <h3>Tour Services</h3>
+                    <p>Explore Ghana's beautiful attractions with our guided tour packages and comfortable vehicles.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>24/7 Roadside Assistance</h3>
+                    <p>Round-the-clock support for any issues during your rental period. We're always here to help.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Kauches Drive</h2>
+                    <p class="about-description">
+                        Kauches Drive is Ghana's premier car rental service, committed to providing 
+                        quality vehicles and exceptional customer service. With years of experience 
+                        in the industry, we understand what travelers need.
+                    </p>
+                    <p class="about-description">
+                        Our fleet consists of well-maintained, modern vehicles suitable for any 
+                        occasion - from business trips to family vacations. We pride ourselves on 
+                        transparency, reliability, and putting our customers first.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Quality Vehicles</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Customer Support</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="hero.png" alt="About Kauches Drive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Real experiences from real customers</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Excellent service! The car was clean, well-maintained, and the booking 
+                        process was seamless. Highly recommend Kauches Drive for anyone looking 
+                        for reliable car rentals in Accra."
+                    </p>
+                    <div class="testimonial-author">
+                        <h4>Kwame Mensah</h4>
+                        <p>Business Executive</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "We rented a Hiace for our wedding and it was perfect! The driver was 
+                        professional and punctual. Thank you Kauches Drive for making our day special."
+                    </p>
+                    <div class="testimonial-author">
+                        <h4>Ama Osei</h4>
+                        <p>Event Planner</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Great prices and amazing customer service. The team was very helpful 
+                        and accommodating. Will definitely use their services again!"
+                    </p>
+                    <div class="testimonial-author">
+                        <h4>John Addo</h4>
+                        <p>Tourist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We're here to answer your questions and help you book</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+233 596 016 655</p>
+                            <p>+233 200 181 228</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@kauchesdrive.com</p>
+                            <p>bookings@kauchesdrive.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Accra, Ghana</p>
+                            <p>Greater Accra Region</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-details">
+                            <h3>Working Hours</h3>
+                            <p>Mon - Sun: 24/7</p>
+                            <p>Always Available</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER SECTION ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="logo.jpeg" alt="Kauches Drive Logo">
+                        <span>Kauches Drive</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner for premium car rentals in Ghana. 
+                        Quality vehicles, exceptional service.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#fleet">Our Fleet</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Car Rentals</a></li>
+                        <li><a href="#services">Airport Transfers</a></li>
+                        <li><a href="#services">Event Transportation</a></li>
+                        <li><a href="#services">Corporate Rentals</a></li>
+                        <li><a href="#services">Tour Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates and special offers</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kauches Drive. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
